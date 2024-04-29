@@ -379,6 +379,7 @@ footer .footer-copyright .contenedor p span {
 	overflow-y: scroll;
 	margin: auto;
 }
+
 .modal-contenedor-servicios .modal {
 	position: absolute;
 	top: 50%;
@@ -388,6 +389,7 @@ footer .footer-copyright .contenedor p span {
 	transition: all .3s .3s;
 	box-shadow: 0 35px 35px rgba(0, 0, 0, .3);
 }
+
 .modal-contenedor-servicios .close {
 	position: absolute;
 	top: 16px;
@@ -398,55 +400,67 @@ footer .footer-copyright .contenedor p span {
 	color: #8f8d8d;
 	text-decoration: none;
 }
+
 .modal-contenedor-servicios:target {
 	opacity: 1;
 	visibility: visible;
 }
+
 .modal-contenedor-servicios:target .modal {
 	transform: translate(-50%, -13%);
 }
-.modal-contenedor-servicios .modal-body{
+
+.modal-contenedor-servicios .modal-body {
 	background-color: #8f8d8d;
 }
-.modal-contenedor-servicios .contenedor{
+
+.modal-contenedor-servicios .contenedor {
 	max-width: 100%;
-	border: 2px solid  #292727;
+	border: 2px solid #292727;
 }
-.modal-contenedor-servicios .contenedor .titulo{
+
+.modal-contenedor-servicios .contenedor .titulo {
 	font-size: 24px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
-.modal-contenedor-servicios .contenedor-accesorios{
+
+.modal-contenedor-servicios .contenedor-accesorios {
 	overflow: hidden;
 	width: 98%;
 	margin: auto;
 }
-.modal-contenedor-servicios .contenedor-accesorios .descripcion{
+
+.modal-contenedor-servicios .contenedor-accesorios .descripcion {
 	width: 20%;
 	height: 180px;
-    float: left;
+	float: left;
 	padding: 10px;
 }
-.modal-contenedor-servicios .contenedor-accesorios .foto{
+
+.modal-contenedor-servicios .contenedor-accesorios .foto {
 	margin: auto;
 }
-.modal-contenedor-servicios .contenedor-accesorios img{
+
+.modal-contenedor-servicios .contenedor-accesorios img {
 	border: 2px solid #292727;
 	width: 110px;
 	height: 110px;
 	border-radius: 50%;
 }
-.modal-contenedor-servicios .contenedor-accesorios img:hover{
+
+.modal-contenedor-servicios .contenedor-accesorios img:hover {
 	opacity: .6;
 	transition: opacity 0.3s;
 }
-.modal-contenedor-servicios .contenedor-accesorios .nombre{
+
+.modal-contenedor-servicios .contenedor-accesorios .nombre {
 	font-size: 12px;
 	font-weight: 600;
 	width: 100%;
 }
-.modal-contenedor-servicios .contenedor-accesorios .precio{
+
+.modal-contenedor-servicios .contenedor-accesorios .precio {
 	font-size: 14px;
 	font-weight: 600;
 	width: 100%;
@@ -454,200 +468,211 @@ footer .footer-copyright .contenedor p span {
 }
 
 /*Media Querys*/
-@media screen and (max-width:800px) {
-	.contenedor {
-		font-size: 14px;
-	}
-
-	header .cabecera-superior .contenedor .cabecera-medios {
-		display: block;
-	}
-
-	header .cabecera-superior .contenedor .cabecera-social {
-		display: inline-flex;
-		margin: auto;
-	}
-
-	header .cabecera-principal,
-	header .cabecera-principal .contenedor,
-	header .cabecera-principal .contenedor .logo-dmc,
-	header .cabecera-principal .contenedor .panel-menu {
-		height: 90px;
-	}
-
-	header .cabecera-principal .contenedor .logo-dmc img {
-		width: 120px;
-		height: auto;
-	}
-
-	header .cabecera-principal .contenedor .panel-menu .menu ul {
-		padding: 0;
-	}
-
-	header .cabecera-principal .contenedor .panel-menu .menu .menu-opciones li {
-		height: 90px;
-		padding: 28px;
-	}
-
-	header .cabecera-principal .contenedor .panel-menu .menu .menu-opciones li a {
+@media screen and (max-width:400px) {
+	* {
 		font-size: 16px;
 	}
 
-	.banner .contenedor h1 {
-		font-size: 35px;
-	}
-
-	.banner .contenedor h3 {
-		font-size: 20px;
-	}
-
-	.galeria-titulo .contenedor {
-		height: 90px;
-		padding-top: 30px;
-	}
-
-	.galeria-titulo .contenedor h2 {
-		font-size: 25px;
-	}
-
-	.galeria-imagen {
-		width: 50%;
-		height: 220px;
-		float: left;
-	}
-
-	.galeria-imagen img {
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 220px;
-	}
-
-	footer .footer-enlaces .contenedor {
-		max-width: 98%;
-	}
-
-	footer .footer-enlaces .footer-linea {
-		width: 34%;
-	}
-
-	footer .footer-enlaces .lista-social {
-		width: 27%;
-		margin-block-start: -4px;
-		padding-inline-start: 5px;
-	}
-
-}
-
-@media screen and (max-width:600px) {
-	.contenedor {
+	/*Header*/
+	header .cabecera-superior .contenedor {
 		max-width: 100%;
+		margin: 0;
+		padding: 0;
 		font-size: 12px;
 	}
 
-	header .cabecera-superior {
-		height: 65px;
-		width: 100%;
-	}
-
-	header .cabecera-superior .contenedor {
-		margin: 0 10px;
-		width: 100%;
-		height: 65px;
-		padding: 15px;
-	}
-
 	header .cabecera-superior .contenedor .cabecera-medios {
-		display: block;
+		width: 100%;
 	}
 
 	header .cabecera-superior .contenedor .cabecera-medios .medios {
-		padding-bottom: 5px;
+		margin: 0;
+		width: 50%;
+		padding: 5px;
+		text-align: center;
+	}
+
+	header .cabecera-superior .contenedor .cabecera-medios a {
+		font-size: 11px;
+	}
+
+	header .cabecera-superior .contenedor .cabecera-medios i {
+		font-size: 11px;
 	}
 
 	header .cabecera-superior .contenedor .cabecera-social {
-		display: block;
-
+		width: 100%;
 	}
 
 	header .cabecera-superior .contenedor .cabecera-social .social {
-		margin: 3px;
-		padding-left: 90px;
-		padding-bottom: 1px;
+		position: absolute;
+		visibility: hidden;
 	}
 
 	header .cabecera-superior .contenedor .cabecera-social .login-registro {
-		margin: 3px;
-		padding-left: 100px;
+		width: 100%;
+		padding-top: 15px;
+		padding-right: 5px;
+		padding-bottom: 5px;
+		text-align: right;
 	}
 
-	header .cabecera-principal,
-	header .cabecera-principal .contenedor,
-	header .cabecera-principal .contenedor .logo-dmc,
-	header .cabecera-principal .contenedor .panel-menu {
-		height: 70px;
+	header .cabecera-principal .contenedor {
+		max-width: 100%;
+		padding: 0;
+		margin: 0;
+		background-color: #8f8d8d;
+	}
+
+	header .cabecera-principal .contenedor .logo-dmc {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 86px;
 	}
 
 	header .cabecera-principal .contenedor .logo-dmc img {
-		width: 100px;
-		height: auto;
+		border: 2px solid rgb(41, 39, 39);
+		position: absolute;
+		left: 20px;
+		top: 50px;
+		border-radius: 10%;
 	}
 
-	header .cabecera-principal .contenedor .panel-menu .menu ul {
+	header .cabecera-principal .contenedor .panel-menu {
+		margin: 0;
 		padding: 0;
+		width: 100%;
+	}
+
+	header .cabecera-principal .contenedor .panel-menu .menu {
+		width: 100%;
+	}
+
+	header .cabecera-principal .contenedor .panel-menu .menu .menu-opciones {
+		padding: 0;
+		margin: 0;
+		width: 100%;
 	}
 
 	header .cabecera-principal .contenedor .panel-menu .menu .menu-opciones li {
-		height: 70px;
-		padding: 20px;
+		padding: 0;
+		margin: 0;
+		width: 33.33%;
+		padding-bottom: 10px;
+		padding-top: 5px;
+		text-align: center;
 	}
 
 	header .cabecera-principal .contenedor .panel-menu .menu .menu-opciones li a {
 		font-size: 14px;
+		font-weight: 800;
+		color: black;
+	}
+
+	/*Logo y titulo*/
+	.banner {
+		margin: 0;
+		padding: 0;
+		background-color: #8f8d8d;
+	}
+
+	.banner .imagen-banner {
+		margin: 0;
+		padding: 0;
+	}
+
+	.banner .imagen-banner img {
+		opacity: 1;
+	}
+
+	.banner .contenedor {
+		max-width: 50%;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: -105px;
+		left: 170px;
 	}
 
 	.banner .contenedor h1 {
-		font-size: 25px;
+		font-size: 18px;
+		font-weight: 800;
+		color: black;
+		margin: 0;
+		padding: 5px;
 	}
 
 	.banner .contenedor h3 {
-		font-size: 15px;
+		visibility: hidden;
 	}
 
+	/*Galeria*/
 	.galeria-titulo .contenedor {
-		height: 70px;
-		padding-top: 35px;
+		margin: 0;
+		padding: 0;
+		max-width: 100%;
+		background-color: #8f8d8d;
 	}
 
 	.galeria-titulo .contenedor h2 {
-		font-size: 20px;
+		font-size: 18px;
+		font-weight: 800;
+		color: black;
+		margin: 10px;
 	}
 
-	.galeria-imagen {
+	.galeria-imagenes {
+		background-color: #8f8d8d;
+	}
+
+	.galeria-imagenes .galeria-imagen {
 		width: 50%;
-		height: 220px;
-		float: left;
+		height: 200px;
 	}
 
-	.galeria-imagen img {
-		top: 0;
-		left: 0;
+	.galeria-imagenes .galeria-imagen img {
 		width: 100%;
-		height: 220px;
+		height: 200px;
+		padding: 5px;
 	}
 
 	footer .footer-enlaces .contenedor {
-		max-width: 98%;
+		max-width: 100%;
+		padding: 0;
+		margin: 0;
 	}
 
-	footer .footer-enlaces .footer-linea {
-		width: 30%;
+	footer .footer-enlaces .contenedor .footer-linea {
+		position: absolute;
+		visibility: hidden;
 	}
 
-	footer .footer-enlaces .lista-social {
-		width: 34%;
-		margin-block-start: -4px;
-		padding-inline-start: 5px;
+	footer .footer-enlaces .contenedor .lista-social {
+		margin: auto;
+		padding: 0;
+		width: 100%;
 	}
 
+	footer .footer-enlaces .contenedor .lista-social li {
+		width: 19%;
+		margin: 0;
+		padding-top: 25px;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+
+	footer .footer-copyright span {
+		visibility: hidden;
+	}
+
+	/*Modal Contacto y En Construcción*/
+	.modal {
+		position: absolute;
+		width: 90%;
+	}
+
+	.close {
+		top: 3px;
+	}
 }
