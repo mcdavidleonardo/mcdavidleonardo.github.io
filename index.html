@@ -1,20 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Envío de correo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>DMC Motos</title>
 </head>
+
 <body>
-    <h1>Contacto</h1>
-    <form action="mailto:elvis.pachacama@itq.edu.ec" method="post" enctype="text/plain">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" required><br>
-        <label for="email">Correo electrónico:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
-        <input type="submit" value="Enviar">
-    </form>
+    <!--Cabecera principal Correo, Social, Logo y Menu-->
+    <header>
+        <div class="cabecera-superior">
+            <div class="contenedor">
+                <div class="cabecera-medios">
+                    <div class="medios">
+                        <a href="mailto:info@dmc.motos.com"><i class="bi bi-envelope-fill"></i>
+                            dmc.motos.uio@gmail.com</a>
+                    </div>
+                    <div class="medios">
+                        <a href="tel:+593984620701"><i class="bi bi-telephone-fill"></i> +593 984620701</a>
+                    </div>
+                </div>
+                <div class="cabecera-social">
+                    <div class="social">
+                        <ul class="lista-social">
+                            <li><a href="#modal-construccion"><i class="bi bi-whatsapp"></i></a></li>
+                            <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                            </li>
+                            <li><a href="#modal-construccion"><i class="bi bi-messenger"></i></a></li>
+                            <li><a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="https://www.skype.com/es/" target="_blank"><i class="bi bi-skype"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="login-registro">
+                        <a href="#modal-construccion">Login /</a>
+                        <a href="#modal-construccion">Registro</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cabecera-principal">
+            <div class="contenedor">
+                <div class="logo-dmc">
+                    <img src="imagenes/dmc-motos.jpg" alt="DMC Motos">
+                </div>
+                <div class="panel-menu">
+                    <nav class="menu">
+                        <ul class="menu-opciones">
+                            <li><a href="#modal-contenedor">Contacto</a></li>
+                            <li><a href="#modal-contenedor-servicios">Servicios</a></li>
+                            <li><a href="#modal-acerca-de">Acerca de</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Fin Cabecera principal Correo, Social, Logo y Menu-->
+    <!--Modal Seccion Contactos-->
+    <div class="modal-contenedor" id="modal-contenedor">
+        <div class="modal">
+            <a href="#" class="close">&times;</a>
+            <div class="modal-header">
+                <h1>Contacto</h1>
+            </div>
+            <div class="modal-body">
+                <p><i class="bi bi-telephone-fill"></i> Celular: <a href="tel:+593984620701">+593 984620701, +593
+                        985384683</a></p>
+                <p><i class="bi bi-envelope-fill"></i> Email: <a
+                        href="mailto:info@dmc.motos.com">dmc.motos.uio@gmail.com</a></p>
+                <p>Dirección: Avenida Solanda y OE3J S25-59 Quito-Ecuador</p>
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d249.36080661500048!2d-78.54262466745294!3d-0.273374980881172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1714169355881!5m2!1ses-419!2sec"></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p>Gracias por preferirnos!</p>
+            </div>
+        </div>
+    </div>
+    <!--Fin Modal Seccion Contactos-->
+    <!--Modal Seccion en Construccion-->
+    <div class="modal-contenedor" id="modal-construccion">
+        <div class="modal">
+            <a href="#" class="close">&times;</a>
+            <div class="modal-header">
+                <h1>Advertencia</h1>
+            </div>
+            <div class="modal-body">
+                <p>Esta sección o funcionalidad aún está en construcción.</p>
+            </div>
+            <div class="modal-footer">
+                <p>Gracias por preferirnos!</p>
+            </div>
+        </div>
+    </div>
+    <!--Fin Modal Seccion en Construccion-->
+    <!--Modal Seccion Acerca de-->
+    <div class="modal-contenedor" id="modal-acerca-de">
+        <div class="modal">
+            <a href="#" class="close">&times;</a>
+            <div class="modal-header">
+                <h1>Acerca de nosotros</h1>
+            </div>
+            <div class="modal-body">
+                    <h2 class="acerca-de-titulo">Nuestra historia</h2>
+                    <p class="acerca-de-parrafo">El almacén “DMC.MOTOS.UIO” empieza a funcionar formalmente desde el año
+                        2020, dedicados inicialmente únicamente a la distribución de accesorios para
+                        motocicleta a nivel nacional, con el tiempo se ha ido expandiendo el abanico del
+                        portafolio de productos, así como también la venta al por menor a través de un
+                        punto de venta. Cuyos propietarios son padres e hijo, Jaime Cachago y Darwin
+                        Cachago siendo este un negocio familiar.
+                        Hasta el año 2022 el giro de negocio era únicamente de distribución al por mayor
+                        a distintos locales y talleres del país. A partir de inicios del 2023, inauguramos
+                        un taller de motocicletas y de a poco hemos incursionado en la venta de
+                        repuestos y accesorios al por menor dentro del mismo local.</p>
+                    <h2 class="acerca-de-titulo">Misión y visión</h2>
+                    <p class="acerca-de-parrafo"><span class="bold">MISION:</span>
+                        Ser la empresa líder en la venta de repuestos de motos de alta calidad, ofreciendo un servicio
+                        excepcional y contribuyendo a la seguridad y satisfacción de nuestros clientes.
+                    <p class="acerca-de-parrafo"><span class="bold">VISION:</span>
+                        Consolidarnos como la referencia en el mercado de repuestos para motos, expandiendo nuestra
+                        presencia a nivel nacional e internacional, y siendo reconocidos por nuestra excelencia,
+                        innovación y compromiso con la comunidad motociclista. </p>
+                    </p>
+                </div>
+            <div class="modal-footer">
+                <p>&copy; 2024 DMC MOTOS</p>
+            </div>
+        </div>
+    </div>
+    <!--Fin Modal Seccion Acerca de-->
+    <!--Modal Sección Accesorios-->
+    <div class="modal-contenedor-servicios" id="modal-contenedor-servicios">
+        <div class="modal">
+            <a href="#" class="close">&times;</a>
+            <div class="modal-header">
+                <h1>Productos y Accesorios</h1>
+            </div>
+            <div class="modal-body">
+                <div class="contenedor">
+                    <h3 class="titulo">Parrillas</h3>
+                    <div class="contenedor-accesorios">
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/PAZOLA ZONGHZEN.png"></div>
+                            <p class="nombre">PAZOLA 150 ZONGZHEN</p>
+                            <p class="precio">$22.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/PAZOLA BULTACO.png"></div>
+                            <p class="nombre">PAZOLA BULTACO 150</p>
+                            <p class="precio">$22.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/PARRILLA DTK.png"></div>
+                            <p class="nombre">PARRILLA DTK</p>
+                            <p class="precio">$22.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/TSR125 MODERAN.png"></div>
+                            <p class="nombre">TRS125 MODERAN</p>
+                            <p class="precio">$22.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/TS ER 180 MODERNA.png"></div>
+                            <p class="nombre">TS ER 180/MODERNA</p>
+                            <p class="precio">$22.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/KTM 390.png"></div>
+                            <p class="nombre">KTM 390</p>
+                            <p class="precio">$45.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/QINQUI.png"></div>
+                            <p class="nombre">QINQUI 200</p>
+                            <p class="precio">$24.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/PAZOLA SUKIDA 175.png"></div>
+                            <p class="nombre">PAZOLA SUKIDA 175</p>
+                            <p class="precio">$30.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/PAZOLA SHINERAY JDEI.png"></div>
+                            <p class="nombre">PAZOLA SHINERAY JDEI</p>
+                            <p class="precio">$30.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/EN GS 125 SUZUKI.png"></div>
+                            <p class="nombre">EN/GS 125 SUZUKI</p>
+                            <p class="precio">$25.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/SUZUKI AX4.png"></div>
+                            <p class="nombre">SUZUKI AX4</p>
+                            <p class="precio">$28.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/GSX 125 SUZUKI.png"></div>
+                            <p class="nombre">GSX 125 SUZUKI</p>
+                            <p class="precio">$28.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/GN REFORZADA CON BASE.png"></div>
+                            <p class="nombre">GN REFORZADA CON BASE</p>
+                            <p class="precio">$28.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/HONDA 110.png"></div>
+                            <p class="nombre">HONDA 110</p>
+                            <p class="precio">$28.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/NINJA LOCIN 250.png"></div>
+                            <p class="nombre">NINJA LONCIN 250</p>
+                            <p class="precio">$28.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/M1 ENDURO 200.png"></div>
+                            <p class="nombre">M1 ENDURO 200</p>
+                            <p class="precio">$28.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/M1 FATTY 175.png"></div>
+                            <p class="nombre">M1 FATTY 175</p>
+                            <p class="precio">$40.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/BENELLI 150.png"></div>
+                            <p class="nombre">BENELLI 150</p>
+                            <p class="precio">$40.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/PAZOLA RANGER 150.png"></div>
+                            <p class="nombre">PAZOLA RANGER 150</p>
+                            <p class="precio">$40.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/LONCIN TUNING 250 AÑO 2019.png"></div>
+                            <p class="nombre">LONCIN TUNING 250 AÑO 2019</p>
+                            <p class="precio">$40.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/PULSAR 135 LARGA.png"></div>
+                            <p class="nombre">PULSAR 135 LARGA</p>
+                            <p class="precio">$40.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/PULSAR NS200 160 EXTRA LARGA.png"></div>
+                            <p class="nombre">PULSAR NS200/160 EXTRA LARGA</p>
+                            <p class="precio">$40.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/NINJA DIBULO 250.png"></div>
+                            <p class="nombre">NINJA DIBULO 250</p>
+                            <p class="precio">$40.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/GIXXER 150.png"></div>
+                            <p class="nombre">GIXXER 150</p>
+                            <p class="precio">$40.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/CHIEF 2.png"></div>
+                            <p class="nombre">CHIEF 2</p>
+                            <p class="precio">$40.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/RANGER CGP 200.png"></div>
+                            <p class="nombre">RANGER CGP 200</p>
+                            <p class="precio">$40.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/TUKO RACER 250.png"></div>
+                            <p class="nombre">TUKO RACER 250</p>
+                            <p class="precio">$40.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/SUZUKI DR 200.png"></div>
+                            <p class="nombre">SUZUKI DR 200</p>
+                            <p class="precio">$40.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/PRO 5 TUKO GT 250.png"></div>
+                            <p class="nombre">PRO 5 TUKO GT 250</p>
+                            <p class="precio">$40.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/M1 DIAVOLO 250.png"></div>
+                            <p class="nombre">M1 DIAVOLO 250</p>
+                            <p class="precio">$40.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/RANGER 200FR.png"></div>
+                            <p class="nombre">RANGER 200FR</p>
+                            <p class="precio">$40.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/LONCIN PRO 3.png"></div>
+                            <p class="nombre">LONCIN PRO 3</p>
+                            <p class="precio">$40.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/AX100 U REFORZADA.png"></div>
+                            <p class="nombre">AX100 "U" REFORZADA</p>
+                            <p class="precio">$8.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/GN U REFORZADA.png"></div>
+                            <p class="nombre">GN "U" REFORZADA</p>
+                            <p class="precio">$8.00</p>
+                        </div>
+                    </div>
+                    <h3 class="titulo">Sliders</h3>
+                    <div class="contenedor-accesorios">
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/sliders/CROMADO UNIVERSAL.png"></div>
+                            <p class="nombre">UNIVERSAL CROMADO</p>
+                            <p class="precio">$17.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/sliders/PULSAR NS 200.png"></div>
+                            <p class="nombre">PULSAR NS 200</p>
+                            <p class="precio">$24.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/sliders/CRASHBAR NS 200.png"></div>
+                            <p class="nombre">CRASHBAR NS 200</p>
+                            <p class="precio">$28.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/sliders/DOMINAR 400 2 PZS.png"></div>
+                            <p class="nombre">DOMINAR 400 2 PZS</p>
+                            <p class="precio">$24.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/sliders/DOMINAR 400 2 PZS (1).png"></div>
+                            <p class="nombre">DOMINAR 400 2 PZS</p>
+                            <p class="precio">$50.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/sliders/PULSAR NS200 CC BIKER LINDA.png"></div>
+                            <p class="nombre">PULSAR NS200 CC BIKER LINDA</p>
+                            <p class="precio">$50.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/sliders/SLIDER PULSAR 160.png"></div>
+                            <p class="nombre">CRASHBAR NS 200</p>
+                            <p class="precio">$50.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/sliders/SCRAMBLER 250.png"></div>
+                            <p class="nombre">SCRAMBLER 250</p>
+                            <p class="precio">$50.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/sliders/SLIDER M1 DIAVOLO 250.png"></div>
+                            <p class="nombre">SLIDER M1 DIAVOLO 250</p>
+                            <p class="precio">$50.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/sliders/KTM DUKE 250.png"></div>
+                            <p class="nombre">KTM DUKE 250</p>
+                            <p class="precio">$50.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/sliders/SLIDER LONCIN RALLY 300.png"></div>
+                            <p class="nombre">SLIDER LONCIN RALLY 300</p>
+                            <p class="precio">$72.00</p>
+                        </div>
+                        <div class="descripcion">
+                            <div class="foto"><img src="imagenes/sliders/PULSAR NS 200 CC 2PZS (1).png"></div>
+                            <p class="nombre">PULSAR NS 200 CC 2PZS</p>
+                            <p class="precio">$12.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p>Gracias por preferirnos!</p>
+            </div>
+        </div>
+    </div>
+    <!--Fin Modal Sección Accesorios-->
+    <!--Banner principal y slogan de la empresa-->
+    <div class="banner">
+        <div class="imagen-banner">
+            <img src="imagenes/fondo_moto.jpg" alt="DMC Motos">
+        </div>
+        <div class="contenedor">
+            <h1>Bienvenido a DMC Motos</h1>
+            <h3>Desata tu pasión sobre ruedas con nuestros accesorios de excelencia</h3>
+        </div>
+    </div>
+    <!--Fin Banner principal y slogan de la empresa-->
+    <!--Galeria principal-->
+    <section class="galeria-titulo">
+        <div class="contenedor">
+            <h2>Galería</h2>
+        </div>
+    </section>
+    <section class="galeria-imagenes">
+        <div class="galeria-imagen">
+            <img src="imagenes/accesorio1.jpg" alt="Galería">
+        </div>
+        <div class="galeria-imagen">
+            <img src="imagenes/accesorio2.jpg" alt="Galería">
+        </div>
+        <div class="galeria-imagen">
+            <img src="imagenes/accesorio3.jpg" alt="Galería">
+        </div>
+        <div class="galeria-imagen">
+            <img src="imagenes/accesorio4.jpg" alt="Galería">
+        </div>
+        <div class="galeria-imagen">
+            <img src="imagenes/accesorio5.jpg" alt="Galería">
+        </div>
+        <div class="galeria-imagen">
+            <img src="imagenes/accesorio6.jpg" alt="Galería">
+        </div>
+        <div class="galeria-imagen">
+            <img src="imagenes/accesorio7.jpg" alt="Galería">
+        </div>
+        <div class="galeria-imagen">
+            <img src="imagenes/accesorio8.jpg" alt="Galería">
+        </div>
+        <div class="galeria-imagen">
+            <img src="imagenes/accesorio9.jpg" alt="Galería">
+        </div>
+        <div class="galeria-imagen">
+            <img src="imagenes/accesorio10.jpg" alt="Galería">
+        </div>
+        <div class="galeria-imagen">
+            <img src="imagenes/accesorio11.jpg" alt="Galería">
+        </div>
+        <div class="galeria-imagen">
+            <img src="imagenes/accesorio12.jpg" alt="Galería">
+        </div>
+    </section>
+    <!--Fin Galeria principal-->
+    <!--Footer Social-->
+    <footer>
+        <div class="footer-enlaces">
+            <div class="contenedor">
+                <hr class="footer-linea">
+                <ul class="lista-social">
+                    <li><a href="#modal-construccion"><i class="bi bi-whatsapp"></i></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#modal-construccion"><i class="bi bi-messenger"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="https://www.skype.com/es/" target="_blank"><i class="bi bi-skype"></i></a></li>
+                </ul>
+                <hr class="footer-linea">
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="contenedor">
+                <p>Copyright 2024 &copy; dmc.motos.com <span> | </span> Desarrollado por "Los Desarrolladores"</a></p>
+            </div>
+        </div>
+    </footer>
+    <!--Fin Footer Social-->
 </body>
+
 </html>

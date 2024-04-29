@@ -1,0 +1,653 @@
+/* Estilos Globales*/
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+
+.contenedor {
+	max-width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+}
+
+/* Header Iconos*/
+header {
+	width: 100%;
+}
+
+header .cabecera-superior {
+	background: rgb(41, 39, 39);
+}
+
+header .cabecera-superior a {
+	text-decoration: none;
+	color: #fff;
+}
+
+header .cabecera-superior .contenedor {
+	display: flex;
+	flex: 1;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+header .cabecera-superior .contenedor .cabecera-medios {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+header .cabecera-superior .contenedor .cabecera-medios .medios {
+	margin-right: 80px;
+}
+
+header .cabecera-superior .contenedor .cabecera-social {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+header .cabecera-superior .contenedor .cabecera-social ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+header .cabecera-superior .contenedor .cabecera-social li {
+	display: inline-block;
+}
+
+header .cabecera-superior .contenedor .cabecera-social .social {
+	margin-right: 80px;
+}
+
+header .cabecera-superior .contenedor .cabecera-social .lista-social li {
+	margin-right: 12px;
+	margin-left: 12px;
+}
+
+/* Header Logo */
+header .cabecera-principal {
+	width: 100%;
+	height: 100%;
+}
+
+header .cabecera-principal .contenedor {
+	display: flex;
+	flex: 1;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+header .cabecera-principal .contenedor .logo-dmc,
+header .cabecera-principal .contenedor .panel-menu {
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+header .cabecera-principal .contenedor .logo-dmc img {
+	width: 150px;
+	height: 105px;
+}
+
+header .cabecera-principal .contenedor .panel-menu .menu {
+	display: inline-block;
+}
+
+header .cabecera-principal .contenedor .panel-menu .menu ul {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+header .cabecera-principal .contenedor .panel-menu .menu .menu-opciones {
+	display: flex;
+}
+
+header .cabecera-principal .contenedor .panel-menu .menu .menu-opciones li,
+header .cabecera-principal .contenedor .panel-menu .menu .menu-opciones li a {
+	font-size: 20px;
+	font-weight: 600;
+	color: #3a3a3a;
+	text-decoration: none;
+}
+
+header .cabecera-principal .contenedor .panel-menu .menu .menu-opciones li {
+	padding: 35px;
+	list-style-type: none;
+}
+
+/* Banner */
+.banner {
+	position: relative;
+	margin-bottom: -8px;
+}
+
+.banner img {
+	width: 100%;
+	opacity: .8;
+}
+
+.banner .contenedor {
+	position: absolute;
+	top: 0;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	z-index: 9;
+}
+
+.banner .contenedor h1 {
+	font-size: 45px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 5em;
+	color: #fff;
+}
+
+.banner .contenedor h3 {
+	font-weight: normal;
+	font-size: 30px;
+	color: #fff;
+}
+
+/* Galería */
+.galeria-titulo .contenedor {
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.galeria-titulo .contenedor h2 {
+	font-size: 30px;
+}
+
+.galeria-imagenes {
+	overflow: hidden;
+}
+
+.galeria-imagen {
+	width: 25%;
+	height: 220px;
+	float: left;
+}
+
+.galeria-imagen img {
+	-webkit-filter: brightness(100%);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 220px;
+}
+
+.galeria-imagen img:hover {
+	-webkit-filter: brightness(40%);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+/* Footer */
+footer {
+	background: black;
+}
+
+footer .footer-enlaces .contenedor {
+	display: flex;
+	flex: 1;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+footer .footer-enlaces .footer-linea {
+	background-color: #ccc;
+	border: 1px solid #fff;
+	height: 1px;
+	width: 38%;
+	margin-bottom: 30px;
+	box-sizing: content-box;
+	overflow: visible;
+}
+
+footer .footer-enlaces .lista-social {
+	width: 23%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	list-style-type: disc;
+	margin-block-start: 0px;
+	margin-block-end: 1px;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+	unicode-bidi: isolate;
+}
+
+footer .footer-enlaces .lista-social li:first-child {
+	margin-left: 20px;
+}
+
+footer .footer-enlaces .lista-social li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+footer .footer-enlaces .lista-social i {
+	color: #fff;
+}
+
+footer .footer-copyright .contenedor {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+footer .footer-copyright .contenedor p {
+	color: #fff;
+}
+
+footer .footer-copyright .contenedor p span {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/* Modales Contacto y Página en Construcción*/
+.modal-contenedor {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
+	z-index: 25;
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 50%;
+	transition: all .3s .3s;
+	box-shadow: 0 35px 35px rgba(0, 0, 0, .3);
+}
+
+.close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	cursor: pointer;
+	font-size: 24px;
+	font-weight: 600;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.modal-header,
+.modal-footer {
+	padding: 8px;
+	background-color: #292727;
+}
+
+.modal-header h1,
+.modal-footer p {
+	color: #c9c8c8;
+}
+
+.modal-body {
+	padding: 30px;
+	background-color: #8f8d8d;
+}
+
+.modal-body p {
+	color: black;
+	padding: 10px;
+}
+
+.modal-body a {
+	color: black;
+	text-decoration: none;
+}
+
+.modal-body .mapa {
+	border: 3px solid #292727;
+	width: 50%;
+	margin: auto;
+}
+
+.modal-body .mapa iframe {
+	width: 100%;
+}
+
+.modal-contenedor:target {
+	opacity: 1;
+	visibility: visible;
+}
+
+.modal-contenedor:target .modal {
+	transform: translate(-50%, -50%);
+}
+
+/* Modal Acerca de*/
+.modal-contenedor .modal .acerca-de-titulo {
+	color: black;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.modal-contenedor .modal .acerca-de-parrafo {
+	color: black;
+	padding: 10px;
+	font-size: 14px;
+}
+
+.modal-contenedor .modal .bold {
+	font-size: 14px;
+	font-weight: 800;
+}
+
+/*Articulos y Servicios*/
+.modal-contenedor-servicios {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
+	z-index: 25;
+	overflow-y: scroll;
+	margin: auto;
+}
+.modal-contenedor-servicios .modal {
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -13%);
+	text-align: center;
+	width: 95%;
+	transition: all .3s .3s;
+	box-shadow: 0 35px 35px rgba(0, 0, 0, .3);
+}
+.modal-contenedor-servicios .close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	cursor: pointer;
+	font-size: 24px;
+	font-weight: 600;
+	color: #8f8d8d;
+	text-decoration: none;
+}
+.modal-contenedor-servicios:target {
+	opacity: 1;
+	visibility: visible;
+}
+.modal-contenedor-servicios:target .modal {
+	transform: translate(-50%, -13%);
+}
+.modal-contenedor-servicios .modal-body{
+	background-color: #8f8d8d;
+}
+.modal-contenedor-servicios .contenedor{
+	max-width: 100%;
+	border: 2px solid  #292727;
+}
+.modal-contenedor-servicios .contenedor .titulo{
+	font-size: 24px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.modal-contenedor-servicios .contenedor-accesorios{
+	overflow: hidden;
+	width: 98%;
+	margin: auto;
+}
+.modal-contenedor-servicios .contenedor-accesorios .descripcion{
+	width: 20%;
+	height: 180px;
+    float: left;
+	padding: 10px;
+}
+.modal-contenedor-servicios .contenedor-accesorios .foto{
+	margin: auto;
+}
+.modal-contenedor-servicios .contenedor-accesorios img{
+	border: 2px solid #292727;
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+}
+.modal-contenedor-servicios .contenedor-accesorios img:hover{
+	opacity: .6;
+	transition: opacity 0.3s;
+}
+.modal-contenedor-servicios .contenedor-accesorios .nombre{
+	font-size: 12px;
+	font-weight: 600;
+	width: 100%;
+}
+.modal-contenedor-servicios .contenedor-accesorios .precio{
+	font-size: 14px;
+	font-weight: 600;
+	width: 100%;
+	padding-top: 0;
+}
+
+/*Media Querys*/
+@media screen and (max-width:800px) {
+	.contenedor {
+		font-size: 14px;
+	}
+
+	header .cabecera-superior .contenedor .cabecera-medios {
+		display: block;
+	}
+
+	header .cabecera-superior .contenedor .cabecera-social {
+		display: inline-flex;
+		margin: auto;
+	}
+
+	header .cabecera-principal,
+	header .cabecera-principal .contenedor,
+	header .cabecera-principal .contenedor .logo-dmc,
+	header .cabecera-principal .contenedor .panel-menu {
+		height: 90px;
+	}
+
+	header .cabecera-principal .contenedor .logo-dmc img {
+		width: 120px;
+		height: auto;
+	}
+
+	header .cabecera-principal .contenedor .panel-menu .menu ul {
+		padding: 0;
+	}
+
+	header .cabecera-principal .contenedor .panel-menu .menu .menu-opciones li {
+		height: 90px;
+		padding: 28px;
+	}
+
+	header .cabecera-principal .contenedor .panel-menu .menu .menu-opciones li a {
+		font-size: 16px;
+	}
+
+	.banner .contenedor h1 {
+		font-size: 35px;
+	}
+
+	.banner .contenedor h3 {
+		font-size: 20px;
+	}
+
+	.galeria-titulo .contenedor {
+		height: 90px;
+		padding-top: 30px;
+	}
+
+	.galeria-titulo .contenedor h2 {
+		font-size: 25px;
+	}
+
+	.galeria-imagen {
+		width: 50%;
+		height: 220px;
+		float: left;
+	}
+
+	.galeria-imagen img {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 220px;
+	}
+
+	footer .footer-enlaces .contenedor {
+		max-width: 98%;
+	}
+
+	footer .footer-enlaces .footer-linea {
+		width: 34%;
+	}
+
+	footer .footer-enlaces .lista-social {
+		width: 27%;
+		margin-block-start: -4px;
+		padding-inline-start: 5px;
+	}
+
+}
+
+@media screen and (max-width:600px) {
+	.contenedor {
+		max-width: 100%;
+		font-size: 12px;
+	}
+
+	header .cabecera-superior {
+		height: 65px;
+		width: 100%;
+	}
+
+	header .cabecera-superior .contenedor {
+		margin: 0 10px;
+		width: 100%;
+		height: 65px;
+		padding: 15px;
+	}
+
+	header .cabecera-superior .contenedor .cabecera-medios {
+		display: block;
+	}
+
+	header .cabecera-superior .contenedor .cabecera-medios .medios {
+		padding-bottom: 5px;
+	}
+
+	header .cabecera-superior .contenedor .cabecera-social {
+		display: block;
+
+	}
+
+	header .cabecera-superior .contenedor .cabecera-social .social {
+		margin: 3px;
+		padding-left: 90px;
+		padding-bottom: 1px;
+	}
+
+	header .cabecera-superior .contenedor .cabecera-social .login-registro {
+		margin: 3px;
+		padding-left: 100px;
+	}
+
+	header .cabecera-principal,
+	header .cabecera-principal .contenedor,
+	header .cabecera-principal .contenedor .logo-dmc,
+	header .cabecera-principal .contenedor .panel-menu {
+		height: 70px;
+	}
+
+	header .cabecera-principal .contenedor .logo-dmc img {
+		width: 100px;
+		height: auto;
+	}
+
+	header .cabecera-principal .contenedor .panel-menu .menu ul {
+		padding: 0;
+	}
+
+	header .cabecera-principal .contenedor .panel-menu .menu .menu-opciones li {
+		height: 70px;
+		padding: 20px;
+	}
+
+	header .cabecera-principal .contenedor .panel-menu .menu .menu-opciones li a {
+		font-size: 14px;
+	}
+
+	.banner .contenedor h1 {
+		font-size: 25px;
+	}
+
+	.banner .contenedor h3 {
+		font-size: 15px;
+	}
+
+	.galeria-titulo .contenedor {
+		height: 70px;
+		padding-top: 35px;
+	}
+
+	.galeria-titulo .contenedor h2 {
+		font-size: 20px;
+	}
+
+	.galeria-imagen {
+		width: 50%;
+		height: 220px;
+		float: left;
+	}
+
+	.galeria-imagen img {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 220px;
+	}
+
+	footer .footer-enlaces .contenedor {
+		max-width: 98%;
+	}
+
+	footer .footer-enlaces .footer-linea {
+		width: 30%;
+	}
+
+	footer .footer-enlaces .lista-social {
+		width: 34%;
+		margin-block-start: -4px;
+		padding-inline-start: 5px;
+	}
+
+}
