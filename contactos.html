@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos - Delicius Cake</title>
+    <link rel="stylesheet" href="ArchivosCss/contactos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="ArchivoImagenes/logo.jpg" alt="Delicius Cake" class="mr-2 rounded" style="height: 40px;">
+                Delicius Cake
+            </a>
+            <a href="index.html" class="home-button ml-auto"><i class="fas fa-home"></i> Inicio</a>
+        </nav>
+        <div class="header-container">
+            <i class="bi bi-person-lines-fill" style="font-size: 2em; color: #B5126D;"></i>
+        </div>
+    </header>
+    <main>
+        <div class="contactanos">
+            <h2>CONTACTANOS</h2>
+            <div class="contact-info">
+                <div class="telefonos">
+                    <h3>Número de contacto</h3>
+                    <p>Celular: <a href="tel:+593995732785">+593 99 573 2785</a></p>
+                </div>
+                <div class="redes">
+                    <h3>Dirección de correo electrónico</h3>
+                    <p><a href="mailto:Delicius_cake06@hotmail.com">Delicius_cake06@hotmail.com</a></p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="mapa">
+                <h3>Dirección</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419.2165089727057!2d-78.99626627047263!3d-1.590047215876343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d317830a6de8cb%3A0x9dcc8b7e017181fd!2sDelicius%20Cake!5e0!3m2!1ses-419!2sec!4v1720913785026!5m2!1ses-419!2sec" 
+                width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Avenida: Joaquina Galarza 110 y Azuay</p>
+            </div>
+            <div class="formulario-contacto">
+                <h3>Envía un mensaje</h3>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" autocomplete="off" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <p>&COPY; Todos los derechos reservados Delicius Cake</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Delicius Cake. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modal de mantenimiento -->
+    <div class="modal fade" id="mantenimientoModal" tabindex="-1" role="dialog" aria-labelledby="mantenimientoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color: #000000; color: #FFFFFF;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mantenimientoModalLabel">Sitio en Mantenimiento</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Nuestro sitio está actualmente en mantenimiento. Por favor, vuelva más tarde.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="ArchivosJS/contactos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="Archivos JS/config.js"></script>
+    <script>
+        // Activar la modal de mantenimiento si está habilitado
+        $(document).ready(function(){
+            if (MANTENIMIENTO_CONFIG.contactos) {
+                $("#mantenimientoModal").modal('show');
+            }
+        });
+    </script>
+</body>
+</html>
