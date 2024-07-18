@@ -1,5 +1,3 @@
-// ArchivosJS/pasteles.js
-
 // Mostrar un mensaje de bienvenida al cargar la página
 document.addEventListener('DOMContentLoaded', function() {
     alert('¡Bienvenidos a Pastelería Delicius Cake! La base del sabor');
@@ -23,6 +21,13 @@ document.getElementById('orderForm').addEventListener('submit', function(event) 
         return;
     }
 
-    alert(`Pedido realizado:\nSabor: ${flavor}\nTamaño: ${size}\nMensaje: ${message}`);
+    const pedidoMensaje = `Pedido realizado:\nSabor: ${flavor}\nTamaño: ${size}\nMensaje: ${message}`;
+    alert(pedidoMensaje);
+
+    // Enviar pedido a WhatsApp
+    let whatsappMessage = encodeURIComponent(pedidoMensaje);
+    let whatsappUrl = `https://wa.me/593995732785?text=${whatsappMessage}`; // Cambiar el número por el correcto
+    window.open(whatsappUrl, '_blank');
+
     document.getElementById('orderForm').reset();
 });

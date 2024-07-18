@@ -35,7 +35,26 @@ function actualizarCarrito() {
 // Función para finalizar la compra
 function finalizarCompra() {
     let total = document.getElementById('total-carrito').innerText;
-    alert("Tu compra total es de: $" + total);
+    let carritoHtml = 'Resumen de la compra:\n\n';
+    carrito.forEach(producto => {
+        carritoHtml += `
+            Producto: ${producto.nombre}
+            Precio: $${producto.precio.toFixed(2)}
+            Cantidad: ${producto.cantidad}
+            Subtotal: $${(producto.precio * producto.cantidad).toFixed(2)}\n\n
+        `;
+    });
+    carritoHtml += `Total: $${total}\n\n`;
+
+    // Encode the message to be URL safe
+    let whatsappMessage = encodeURIComponent(carritoHtml);
+
+    // WhatsApp link with the message
+    let whatsappUrl = `https://wa.me/593995732785?text=${whatsappMessage}`;
+
+    // Open WhatsApp with the message
+    window.open(whatsappUrl, '_blank');
+
     carrito = []; // Resetear el carrito
     actualizarCarrito(); // Actualizar la visualización del carrito
 }
