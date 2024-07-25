@@ -1,0 +1,429 @@
+/* Reset CSS: Elimina el margen y relleno predeterminados para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía base y fondo general del sitio */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    background-image: url('../ArchivoImagenes/Recursos/Recurso 2v.jpg'); /* Imagen de fondo */
+    background-size: cover; /* La imagen de fondo cubre toda la pantalla */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* No repite la imagen de fondo */
+    background-attachment: fixed; /* La imagen de fondo se fija al fondo de la página */
+    position: relative; /* Posiciona el contenido de forma relativa al fondo */
+    z-index: 0; /* Establece el índice Z en 0 para la capa base */
+}
+
+/* Opacidad para el fondo */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
+    z-index: -1; /* Posiciona la capa debajo del contenido principal */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #000000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 20px 0; /* Espaciado vertical */
+    text-align: center; /* Centra el texto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para el encabezado */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Alinea el contenido en columna */
+}
+
+.header-container .logo {
+    max-width: 120px; /* Ancho máximo para el logo */
+    margin-bottom: 10px; /* Ajuste del margen inferior */
+    border-radius: 50%; /* Hace que el logo sea circular */
+    border: 3px solid #fff; /* Borde blanco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para el logo */
+}
+
+.header-title {
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para la navegación */
+.navigation {
+    margin-top: 10px; /* Margen superior */
+}
+
+.navigation a {
+    color: #fff; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 15px; /* Margen horizontal */
+    font-weight: bold; /* Texto en negrita */
+    position: relative; /* Posicionamiento relativo para efectos */
+    padding-bottom: 5px; /* Relleno inferior */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+.navigation a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #92C21E; /* Color verde para el subrayado */
+    transform: scaleX(0); /* Escala inicial 0 */
+    transition: transform 0.3s ease; /* Transición suave para la escala */
+    position: absolute; /* Posicionamiento absoluto para el subrayado */
+    bottom: 0; /* Posición inferior */
+    left: 0; /* Alineación izquierda */
+}
+
+.navigation a:hover {
+    color: #92C21E; /* Color verde al pasar el ratón */
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1); /* Escala completa al pasar el ratón */
+}
+
+/* Estilos para la sección de galería */
+.gallery-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    color: #000000; /* Texto blanco */
+    padding: 50px 0; /* Espaciado vertical */
+    text-align: center; /* Centra el texto */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 20px 0; /* Margen vertical */
+}
+
+.gallery-section h2 {
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.carousel-inner {
+    max-height: 500px; /* Altura máxima para las imágenes del carrusel */
+    overflow: hidden; /* Oculta el desbordamiento */
+}
+
+.carousel-inner img {
+    height: 500px; /* Altura fija para las imágenes */
+    object-fit: contain; /* Ajusta la imagen manteniendo la relación de aspecto */
+    object-position: center; /* Centra la imagen */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Relleno */
+}
+
+/* Estilos para la sección de pedidos */
+.order-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    color: #333; /* Texto gris oscuro */
+    padding: 50px 20px; /* Espaciado */
+    text-align: center; /* Centra el texto */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 20px 0; /* Margen vertical */
+}
+
+.order-section h2 {
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.order-form {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px; /* Relleno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin: 20px 0; /* Margen vertical */
+    text-align: left; /* Texto alineado a la izquierda */
+    max-width: 600px; /* Ancho máximo */
+    margin-left: auto; /* Centra el formulario horizontalmente */
+    margin-right: auto; /* Centra el formulario horizontalmente */
+}
+
+.order-form .form-group label {
+    font-weight: bold; /* Texto en negrita */
+}
+
+.order-form .form-group input {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Relleno */
+    margin-top: 5px; /* Margen superior */
+    margin-bottom: 15px; /* Margen inferior */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.order-form .btn {
+    background-color: #1F9891; /* Color de fondo verde */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px; /* Relleno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.order-form .btn:hover {
+    background-color: #92C21E; /* Color verde al pasar el ratón */
+}
+
+/* Estilos para la sección de contacto */
+.contact-section {
+    background-color: #B5126D; /* Fondo rosa oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 30px 20px; /* Reducir el espaciado */
+    text-align: center; /* Centra el texto */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 800px; /* Ancho máximo para centrar la sección */
+    margin: 20px auto; /* Centra la sección horizontalmente */
+}
+
+.contact-section h2 {
+    font-size: 2em; /* Tamaño de fuente más pequeño */
+    margin-bottom: 10px; /* Reducir el margen inferior */
+}
+
+.contact-section p {
+    margin: 5px 0; /* Reducir los márgenes verticales */
+}
+
+.contact-section a {
+    color: #fff; /* Texto blanco */
+    text-decoration: underline; /* Subrayado */
+}
+
+.contact-section a:hover {
+    color: #92C21E; /* Color verde al pasar el ratón */
+}
+
+
+/* Pie de página */
+footer {
+    background-color: #000000; /* Fondo negro */
+    color: #1F9891; /* Texto verde */
+    padding: 10px 0; /* Espaciado vertical */
+    text-align: center; /* Centra el texto */
+}
+
+.footer a {
+    color: #1F9891; /* Texto verde */
+    margin: 0 10px; /* Margen horizontal */
+}
+
+/* Contenedor de contenido */
+.content-container {
+    max-width: 1200px; /* Ancho máximo */
+    margin: auto; /* Centra el contenedor */
+    padding: 0 20px; /* Relleno horizontal */
+}
+
+/* Sección Comentarios y Chat */
+.comments-section, .chat-section {
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Texto gris oscuro */
+    padding: 50px 20px; /* Espaciado */
+    text-align: center; /* Centra el texto */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 20px 0; /* Margen vertical */
+}
+
+.comments-section h2, .chat-section h2 {
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.comments-section form, .chat-section form {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    gap: 10px; /* Espaciado entre elementos */
+}
+
+.comments-section form label, .chat-section form label {
+    font-weight: bold; /* Texto en negrita */
+}
+
+.comments-section form input, .comments-section form textarea, .chat-section form input, .chat-section form textarea {
+    padding: 10px; /* Relleno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.comments-section form button, .chat-section form button {
+    padding: 10px 20px; /* Relleno */
+    background-color: #1F9891; /* Color de fondo verde */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.comments-section form button:hover, .chat-section form button:hover {
+    background-color: #92C21E; /* Color verde al pasar el ratón */
+}
+
+/* Sistema de Notificaciones */
+.notification {
+    position: fixed; /* Posicionamiento fijo */
+    top: 10px; /* Posición superior */
+    right: 10px; /* Posición derecha */
+    background-color: #1F9891; /* Fondo verde */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px; /* Relleno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    z-index: 1000; /* Índice Z alto */
+}
+
+/* Estilos adicionales */
+.rounded-border {
+    border: 3px solid #1F9891; /* Borde verde */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+.titulo-imagen {
+    color: #1F9891; /* Texto verde */
+}
+
+.descripcion-imagen {
+    color: #55B1BE; /* Texto azul claro */
+}
+
+.nombre-empresa {
+    font-size: 50px; /* Tamaño de fuente grande */
+    color: rgb(193, 189, 189); /* Color gris claro */
+    font-family: "Playwrite CU", cursive; /* Fuente personalizada */
+    font-optical-sizing: auto;
+    font-weight: 0; /* Peso de fuente */
+    font-style: normal; /* Estilo de fuente */
+}
+
+.slogan {
+    font-size: 30px; /* Tamaño de fuente grande */
+    color: #55B1BE; /* Color azul claro */
+    font-family: "Playwrite CU", cursive; /* Fuente personalizada */
+    font-optical-sizing: auto;
+    font-weight: 0; /* Peso de fuente */
+    font-style: normal; /* Estilo de fuente */
+}
+
+.suscribete {
+    color: rgb(193, 189, 189); /* Texto gris claro */
+}
+
+.btn-custom {
+    background-color: rgb(193, 189, 189); /* Fondo gris claro */
+    color: #000000; /* Texto negro */
+}
+
+.btn-custom:hover {
+    background-color: #ffffff; /* Fondo blanco al pasar el ratón */
+    color: #000000; /* Texto negro al pasar el ratón */
+}
+
+.color1 { color: #B5126D; } /* Rosa oscuro */
+.color2 { color: #1F9891; } /* Verde */
+.color3 { color: #92C21E; } /* Verde claro */
+.color4 { color: #55B1BE; } /* Azul claro */
+
+/* Ajustes adicionales para dispositivos móviles */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Mantener en columna para pantallas pequeñas */
+        align-items: center;
+    }
+
+    .header-container .logo {
+        margin-bottom: 15px; /* Aumentar el margen inferior */
+    }
+
+    .header-title {
+        font-size: 2em; /* Reducir el tamaño de la fuente */
+    }
+
+    .navigation {
+        flex-direction: column; /* Cambiar a columna */
+        align-items: center;
+    }
+
+    .navigation a {
+        margin: 10px 0; /* Espaciado vertical para enlaces */
+    }
+
+    .carousel-inner img {
+        height: auto; /* Ajustar la altura de las imágenes */
+        max-height: 300px; /* Altura máxima */
+    }
+
+    .order-form {
+        padding: 15px; /* Reducir el relleno */
+        margin: 20px 10px; /* Añadir margen lateral */
+    }
+
+    .order-form .form-group input {
+        font-size: 1em; /* Ajustar el tamaño de la fuente */
+    }
+
+    .btn {
+        padding: 10px 15px; /* Ajustar el relleno */
+    }
+    
+    .comments-section, .chat-section {
+        padding: 30px 10px; /* Reducir el relleno */
+        margin: 10px 0; /* Reducir el margen */
+    }
+    
+    .contact-section {
+        padding: 30px 10px; /* Reducir el relleno */
+    }
+    
+    .contact-section h2, .comments-section h2, .chat-section h2 {
+        font-size: 2em; /* Reducir el tamaño de la fuente */
+    }
+}
+
+/* Ajustes adicionales para dispositivos extra pequeños */
+@media (max-width: 576px) {
+    .header-title {
+        font-size: 1.8em; /* Reducir el tamaño de la fuente */
+    }
+
+    .navigation a {
+        font-size: 0.9em; /* Reducir el tamaño de la fuente */
+    }
+
+    .order-form {
+        margin: 15px 5px; /* Añadir margen lateral */
+    }
+
+    .order-form .form-group input {
+        font-size: 0.9em; /* Ajustar el tamaño de la fuente */
+    }
+
+    .btn {
+        font-size: 0.9em; /* Ajustar el tamaño de la fuente */
+    }
+    
+    .comments-section, .chat-section, .contact-section {
+        padding: 20px 5px; /* Reducir el relleno */
+    }
+
+    .comments-section h2, .chat-section h2, .contact-section h2 {
+        font-size: 1.8em; /* Reducir el tamaño de la fuente */
+    }
+}
