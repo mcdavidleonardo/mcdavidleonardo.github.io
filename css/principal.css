@@ -1,0 +1,182 @@
+/* ESTILOS GENERALES */
+* {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500; /* Use a value from 300 to 800  */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+header,
+footer {
+  background-color: #1a1a1a;
+}
+
+/* ESTILOS PARA EL HEADER */
+.navbar-brand {
+  font-weight: 800;
+  font-size: 25px;
+  color: #f5c11e !important;
+}
+.navbar-brand .description {
+  font-size: 0.75rem; /* Tamaño de la descripción */
+  color: #e0e0e0;
+  margin-left: 10px; /* Espacio entre el título y la descripción */
+}
+.navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.nav-item {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.nav-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Menú Inicio */
+.nav-item.active .nav-link {
+  color: #f5c11e !important;
+}
+
+/* ESTILOS PARA EL BODY */
+
+/* Carrusel principal */
+.carousel-item img {
+  width: 100%;
+  height: 520px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 20px;
+  text-align: left;
+}
+.carousel-caption h5,
+.carousel-caption p {
+  margin: 0;
+  text-align: left; /* Alineación del texto */
+}
+.carousel-caption p {
+  color: #f5c11e !important;
+}
+
+/* Sección Tips */
+.tips-section {
+  /*background-color: #1a1a1a;*/
+  padding: 40px 0;
+  text-align: center; /* Centra el texto en la sección */
+}
+.tips-section h1 {
+  font-size: 2.5rem; /* Tamaño grande para el título */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  color: #f5c11e;
+}
+.tips-section p {
+  font-size: 1rem; /* Tamaño estándar para el párrafo */
+}
+.carousel-item {
+  height: auto; /* Altura automática para el contenido del carrusel */
+}
+.tips-section .carousel-control-prev,
+.tips-section .carousel-control-next {
+  position: static; /* Cambia la posición de las flechas */
+  margin: 0 10px; /* Separación horizontal de 10px */
+}
+.tips-section .carousel-controls-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tips-section .tips_container {
+  height: 120px;
+  padding: 10px;
+}
+.tips-section .tips_container span {
+  color: #f5c11e;
+}
+.divider-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.divider {
+  border: 0;
+  height: 1px;
+  background: #333333;
+  width: 100%;
+  max-width: 1140px; /* Ancho máximo para igualar al contenedor .container */
+}
+
+/* Sección Mas Buscados */
+.perfume-title {
+  text-align: center;
+  color: #f5c11e;
+  margin-bottom: 30px;
+}
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #333333;
+  height: 370px; /* Altura fija para las tarjetas */
+  width: 100%; /* Asegura que las tarjetas ocupen el 100% del ancho del contenedor */
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease; /* Transición para el sombreado */
+}
+.card-img-top {
+  width: 50%;
+  object-fit: cover;
+  transition: opacity 0.3s ease; /* Transición para la opacidad */
+  margin: auto;
+  border: 2px solid #f5c11e;
+  border-radius: 10px;
+}
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.card-title {
+  color: #f5c11e;
+  height: 60px;
+}
+.card-text {
+  color: #ffffff;
+}
+.card-text {
+  margin-bottom: 0; /* Elimina margen inferior en el texto */
+}
+.row {
+  justify-content: center; /* Centra las tarjetas en el contenedor */
+}
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Sombreado al pasar el ratón */
+}
+.card-img-top:hover {
+  opacity: 0.7; /* Imagen más oscura al pasar el ratón */
+}
+
+/* ESTILOS PARA EL FOOTER */
+
+.footer-derechos span {
+  color: #f5c11e;
+}
+
+/* Utilitario para pintar bordes */
+.border {
+  border: 1px solid red;
+}
