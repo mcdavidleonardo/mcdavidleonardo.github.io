@@ -1,0 +1,242 @@
+/* Estilos básicos del cuerpo */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    background-image: url('../ArchivoImagenes/Recursos/Recurso\ 2v.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Opacidad */
+    z-index: -1;
+}
+
+/* Estilos del header */
+.header-container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+}
+
+.navbar-brand {
+    color: #1F9891 !important;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.home-button {
+    color: #1F9891;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.home-button:hover {
+    color: #55B1BE;
+}
+
+.header-title {
+    font-size: 2em;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+.contactanos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: left;
+    transition: background-color 0.3s, transform 0.3s; /* Transición para el color de fondo y la transformación */
+}
+
+.contactanos:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.02); /* Aumenta el tamaño al pasar el ratón */
+}
+
+.contactanos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.telefonos, .redes {
+    flex: 1;
+    margin: 10px 20px;
+}
+
+.telefonos h3, .redes h3 {
+    margin-bottom: 10px;
+}
+
+.telefonos p, .redes p {
+    margin: 5px 0;
+}
+
+.telefonos a, .redes a {
+    color: #1F9891;
+    text-decoration: none;
+    transition: color 0.3s; /* Transición para el color */
+}
+
+.telefonos a:hover, .redes a:hover {
+    text-decoration: underline;
+    color: #55B1BE;
+}
+
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: #1F9891;
+    font-size: 1.5em;
+    transition: color 0.3s; /* Transición para el color */
+}
+
+.social-icon:hover {
+    color: #55B1BE;
+}
+
+.mapa {
+    margin: 20px 0;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+.formulario-contacto {
+    margin: 20px 0;
+}
+
+.formulario-contacto h3 {
+    margin-bottom: 20px;
+}
+
+.formulario-contacto .form-group {
+    margin-bottom: 15px;
+}
+
+.formulario-contacto .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario-contacto .form-group input,
+.formulario-contacto .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Transición para el color del borde */
+}
+
+.formulario-contacto .form-group input:focus,
+.formulario-contacto .form-group textarea:focus {
+    border-color: #1F9891; /* Color del borde al enfocar */
+}
+
+.formulario-contacto .btn {
+    background-color: #1F9891;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición para el color de fondo */
+}
+
+.formulario-contacto .btn:hover {
+    background-color: #55B1BE;
+}
+
+/* Estilos para la notificación */
+.notification {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #1F9891;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s; /* Animación para aparecer y desaparecer */
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .telefonos, .redes {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-icon {
+        font-size: 1.2em;
+    }
+
+    .formulario-contacto .form-group input,
+    .formulario-contacto .form-group textarea {
+        padding: 8px;
+    }
+
+    .formulario-contacto .btn {
+        padding: 8px 16px;
+    }
+}
